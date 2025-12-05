@@ -5,26 +5,35 @@
     --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Montserrat", sans-serif;
     --nav-font: "Montserrat", sans-serif;
-}
-
-/* Global Colors */
-:root {
-    --background-color: #020c19;
-    --default-color: #fafdff;
-    --heading-color: #ffffff;
-    --accent-color: #208bf4;
-    --surface-color: #141e2b;
-    --contrast-color: #ffffff;
-}
-
-/* Nav Menu Colors */
-:root {
+    /* Nav color preset */
     --nav-color: #d8e4f0;
     --nav-hover-color: #ffffff;
     --nav-mobile-background-color: #1b2634;
     --nav-dropdown-background-color: #1b2634;
     --nav-dropdown-color: #fafdff;
     --nav-dropdown-hover-color: #208bf4;
+    /* global color preset */
+    --background-color: #020c19;
+    --default-color: #fafdff;
+    --heading-color: #ffffff;
+    --accent-color: #208bf4;
+    --surface-color: #141e2b;
+    --contrast-color: #ffffff;
+
+    /* text wrap config */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-wrap: balance !important;
+    }
+
+    p,
+    a {
+        text-wrap: pretty !important;
+    }
 }
 
 /* Color Presets */
@@ -451,6 +460,31 @@ h6 {
 .footer .footer-top {
     padding-top: 50px;
     border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+@media (max-width: 992px) {
+    .footer .footer-top {
+        justify-content: center;
+    }
+
+    .footer .footer-top .footer-about {
+        text-align: center;
+    }
+
+    .footer .footer-top .footer-about a {
+        justify-content: center;
+    }
+
+    .footer .footer-top .footer-about .social-links {
+        justify-content: center;
+    }
+
+    .footer .footer-top .footer-contact,
+    .footer .footer-top .footer-contact h4,
+    .footer .footer-top .footer-contact p,
+    .footer .footer-top .footer-contact span {
+        text-align: center;
+    }
 }
 
 .footer .footer-about .logo {
@@ -1120,6 +1154,12 @@ section,
     flex-wrap: wrap;
 }
 
+@media (max-width: 426px) {
+    .about .cta-group {
+        justify-content: center;
+    }
+}
+
 .about .btn {
     padding: 14px 28px;
     border-radius: 8px;
@@ -1364,6 +1404,12 @@ section,
     margin-top: 64px;
 }
 
+@media (max-width: 426px) {
+    .services .cta-banner .cta-content {
+        text-align: center;
+    }
+}
+
 .services .cta-banner .cta-badge {
     display: inline-block;
     background: rgba(255, 255, 255, 0.2);
@@ -1518,6 +1564,18 @@ section,
     .portfolio .portfolio-filters {
         gap: 8px;
         margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 426px) {
+    .portfolio .portfolio-filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        max-width: 75%;
+        margin: auto;
+        margin-bottom: 32px;
+        text-align: center;
     }
 }
 
