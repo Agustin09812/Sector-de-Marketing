@@ -984,39 +984,40 @@
                 <p>Contanos sobre tu proyecto y te responderemos con una solución personalizada.</p>
               </div>
 
-              <form action="forms/contact.php" method="post" class="email-form">
-                <div class="form-group">
-                  <label>Nombre Completo</label>
-                  <input type="text" name="name" class="form-control" required="">
-                </div>
+              <form action="https://formsubmit.co/info@sectordemarketing.net" method="POST" class="email-form" />
+              <div class="form-group">
+                <label>Nombre Completo</label>
+                <input type="text" name="name" class="form-control" required="">
+              </div>
 
-                <div class="form-group">
-                  <label>Dirección de Correo Electrónico</label>
-                  <input type="email" name="email" class="form-control" required="">
-                </div>
+              <div class="form-group">
+                <label>Dirección de Correo Electrónico</label>
+                <input type="email" name="email" class="form-control" required="">
+              </div>
 
-                <div class="form-group">
-                  <label for="company">Asunto</label>
-                  <input type="text" name="ubject" class="form-control" required="">
-                </div>
+              <div class="form-group">
+                <label for="company">Asunto</label>
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de Sector D">
+                <input type="text" name="subject" class="form-control" required="">
+              </div>
 
-                <div class="form-group">
-                  <label>Mensaje</label>
-                  <textarea name="message" class="form-control" rows="5" required=""></textarea>
-                </div>
-                <div class="loading">Cargando...</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Tu mensaje ha sido enviado. ¡Muchas gracias!</div>
+              <div class="form-group">
+                <label>Mensaje</label>
+                <textarea name="message" class="form-control" rows="5" required=""></textarea>
+              </div>
+              <div class="loading">Cargando...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Tu mensaje ha sido enviado. ¡Muchas gracias!</div>
 
-                <button type="submit" class="submit-btn">
-                  <span>Enviar Mensaje</span>
-                  <i class="bi bi-arrow-right"></i>
-                </button>
+              <button type="submit" class="submit-btn">
+                <span>Enviar Mensaje</span>
+                <i class="bi bi-arrow-right"></i>
+              </button>
 
-                <div class="form-footer">
-                  <i class="bi bi-shield-check"></i>
-                  <span>Tu información es segura y nunca será compartida.</span>
-                </div>
+              <div class="form-footer">
+                <i class="bi bi-shield-check"></i>
+                <span>Tu información es segura y nunca será compartida.</span>
+              </div>
               </form>
             </div>
           </div>
